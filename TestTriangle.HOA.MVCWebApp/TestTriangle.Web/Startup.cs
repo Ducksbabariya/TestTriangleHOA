@@ -66,6 +66,7 @@ namespace TestTriangleHOA.Web
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseStaticFiles();

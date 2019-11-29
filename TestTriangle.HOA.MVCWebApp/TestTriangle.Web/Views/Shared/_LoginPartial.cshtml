@@ -4,10 +4,7 @@
 {
     var identity = User.Identity as ClaimsIdentity; // Azure AD V2 endpoint specific
     string preferred_username = identity.Claims.FirstOrDefault(c => c.Type == "preferred_username")?.Value;
-    @*<ul class="nav navbar-nav navbar-right">
-            <li class="navbar-text">Hello @preferred_username!</li>
-            <li><a asp-area="AzureAD" asp-controller="Account" asp-action="SignOut">Sign out</a></li>
-        </ul>*@
+
 
     <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -30,21 +27,23 @@
                         </p>
                     </li>
                     <!-- Menu Body -->
-                    <li class="user-body">
+                    @*<li class="user-body">
                         <div class="row">
                             <div class="col-xs-4 text-center">
                                 <a href="#">Account</a>
                             </div>
                         </div>
-                        <!-- /.row -->
-                    </li>
+
+                    </li>*@
                     <!-- Menu Footer-->
                     <li class="user-footer">
                         <div class="pull-left">
                             <a href="#" class="btn btn-default btn-flat">Profile</a>
                         </div>
                         <div class="pull-right">
+
                             <a href="/AzureAD/Account/SignOut" class="btn btn-default btn-flat">Sign out</a>
+
                         </div>
                     </li>
                 </ul>
@@ -55,7 +54,7 @@
 }
 else
 {
-<ul class="nav navbar-nav navbar-right">
-    <li><a href="/AzureAD/Account/SignIn" class="btn btn-default btn-flat">Sign In</a></li>
-</ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a style="margin-right: 15px;" href="/AzureAD/Account/SignIn" class="btn btn-primary">Sign In</a></li>
+    </ul>
 }

@@ -1,0 +1,9 @@
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Common.deps.json
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Common.dll
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Common.pdb
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Common.csprojAssemblyReference.cache
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Common.csproj.CoreCompileInputs.cache
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Common.AssemblyInfoInputs.cache
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Common.AssemblyInfo.cs
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Common.dll
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Common\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Common.pdb

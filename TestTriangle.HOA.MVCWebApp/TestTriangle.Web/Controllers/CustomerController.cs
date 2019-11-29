@@ -29,54 +29,55 @@ namespace TestTriangleHOA.Web.Controllers
         // GET: /<controller>/
         public IActionResult Index(int page = 1, int pageSize = 50)
         {
-            try
-            {
-                var result = _restService.SendAsync<BaseResponse<Customer>>($"api/Customer?page={page}&pageSize={pageSize}", HttpMethod.Get);
-                return View(result);
-            }
-            catch (Exception ex)
-            {
-                return Error();
-            }
+            var result = _restService.SendAsync<BaseResponse<Customer>>($"api/Customer?page={page}&pageSize={pageSize}", HttpMethod.Get);
+            return View(result);
         }
 
-        public ActionResult Create()
+        public ActionResult CreateCustomer()
         {
-            return View();
+            return View(new Customer());
         }
 
         [HttpPost]
         public ActionResult CreateCustomer(Customer customer)
         {
-            _restService.SendAsync<Customer>("api/Customer", HttpMethod.Post, customer);
-            return RedirectToAction("Index", "Customer");
+            if (ModelState.IsValid)
+            {
+                _restService.SendAsync<Customer>("api/Customer", HttpMethod.Post, customer);
+                return RedirectToAction("Index", "Customer");
+            }
+            return View(customer);
         }
 
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            _restService.SendAsync<bool>($"api/Customer/{id}", HttpMethod.Delete);
+            bool isDeleted = _restService.SendAsync<bool>($"api/Customer/{id}", HttpMethod.Delete);
+            //Redirect to list page with refresh data
             return RedirectToAction("Index", "Customer");
         }
 
-        public ActionResult Update(int id)
+        public ActionResult UpdateCustomer(int id)
         {
             var result = _restService.SendAsync<Customer>($"api/Customer/{id}", HttpMethod.Get);
+            if (result == null)
+            {
+                return View(new Customer());
+            }
+
             return View(result);
         }
 
-        [HttpPut]
+        [HttpPost]
         public ActionResult UpdateCustomer(Customer customer)
         {
-            _restService.SendAsync<Customer>($"api/Customer/{customer.CustomerId}", HttpMethod.Put, customer);
-            return RedirectToAction("Index", "Customer");
+            if (ModelState.IsValid)
+            {
+                _restService.SendAsync<Customer>($"api/Customer/{customer.CustomerId}", HttpMethod.Put, customer);
+                return RedirectToAction("Index", "Customer");
+            }
+            return View(customer);
         }
 
-        [AllowAnonymous]
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

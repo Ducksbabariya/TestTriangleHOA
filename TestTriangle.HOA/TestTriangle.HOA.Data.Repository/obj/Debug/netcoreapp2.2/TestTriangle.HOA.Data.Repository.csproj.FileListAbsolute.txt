@@ -1,0 +1,14 @@
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.deps.json
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.dll
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.pdb
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Common.dll
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Data.dll
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Data.pdb
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\bin\Debug\netcoreapp2.2\TestTriangle.HOA.Common.pdb
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.csprojAssemblyReference.cache
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.csproj.CoreCompileInputs.cache
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.AssemblyInfoInputs.cache
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.AssemblyInfo.cs
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.csproj.CopyComplete
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.dll
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA\TestTriangle.HOA.Data.Repository\obj\Debug\netcoreapp2.2\TestTriangle.HOA.Data.Repository.pdb

@@ -29,7 +29,7 @@
                                 <th>Country</th>
                                 <th>Phone</th>
                                 <th>CreatedOn</th>
-                                <th>Edit/Delete</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,7 +44,7 @@
                                 <td>@Html.DisplayFor(modelItem => item.Country)</td>
                                 <td>@Html.DisplayFor(modelItem => item.Phone)</td>
                                 <td>@Html.DisplayFor(modelItem => item.CreatedOn)</td>
-                                <td><a href="Customer/Update/@item.CustomerId">Update</a> | <a href="" onclick="Delete('@item.CustomerId')">Delete</a></td>
+                                <td><a href="Customer/UpdateCustomer/@item.CustomerId">Update</a> | <a href="" onclick="Delete('@item.CustomerId')">Delete</a> | <a href="Ticket/Index/?customerId=@item.CustomerId">View Tickets</a></td>
                             </tr>
                             }
                     </table>
