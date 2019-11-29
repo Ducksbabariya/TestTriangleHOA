@@ -33,21 +33,30 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model.Data)
+                            @if (Model != null && Model.Data != null && Model.Data.Count > 0)
                             {
-                            <tr>
-                                <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
-                                <td>@Html.DisplayFor(modelItem => item.LastName)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Address)</td>
-                                <td>@Html.DisplayFor(modelItem => item.City)</td>
-                                <td>@Html.DisplayFor(modelItem => item.State)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Country)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Phone)</td>
-                                <td>@Html.DisplayFor(modelItem => item.CreatedOn)</td>
-                                <td><a href="Customer/UpdateCustomer/@item.CustomerId">Update</a> | <a href="" onclick="Delete('@item.CustomerId')">Delete</a> | <a href="Ticket/Index/?customerId=@item.CustomerId">View Tickets</a></td>
-                            </tr>
+                                @foreach (var item in Model.Data)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.LastName)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.City)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.State)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Country)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Phone)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.CreatedOn)</td>
+                                        <td><a href="Customer/UpdateCustomer/@item.CustomerId">Update</a> | <a href="" onclick="Delete('@item.CustomerId')">Delete</a> | <a href="Ticket/Index/?customerId=@item.CustomerId">View Tickets</a></td>
+                                    </tr>
+                                }
                             }
-                    </table>
+                            else
+                            {
+                                <tr>
+                                    <td colspan="9" align="center">No customer available</td>
+                                </tr>
+                            }
+</table>
                 </div>
                 <!-- /.box-body -->
             </div>

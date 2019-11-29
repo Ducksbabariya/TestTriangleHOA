@@ -23,7 +23,7 @@ namespace TestTriangleHOA.Web.Controllers
         public IActionResult Index([FromQuery]int customerId, [FromQuery]int page = 1, [FromQuery]int pageSize = 50)
         {
             var result = _restService.SendAsync<BaseResponse<Ticket>>($"api/Ticket/GetCustomerTickets/{customerId}?page={page}&pageSize={pageSize}", HttpMethod.Get);
-            //ViewBag.Customers = customers.Select(s => new SelectListItem() { Text = $"{s.FirstName} {s.LastName}", Value = s.CustomerId.ToString() }).ToList();
+            ViewBag.Customer = GetCustomer(customerId);
             return View(result);
         }
 
@@ -37,6 +37,11 @@ namespace TestTriangleHOA.Web.Controllers
         private BaseResponse<Customer> GetCustomers()
         {
             return _restService.SendAsync<BaseResponse<Customer>>($"api/Customer", HttpMethod.Get);
+        }
+
+        private Customer GetCustomer(int id)
+        {
+            return _restService.SendAsync<Customer>($"api/Customer/{id}", HttpMethod.Get);
         }
 
         [HttpPost]

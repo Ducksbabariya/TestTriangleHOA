@@ -14,7 +14,7 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Manage Tickets</h3>
+                    <h3 class="box-title">Manage Tickets - @ViewBag.Customer.FirstName @ViewBag.Customer.LastName</h3>
                 </div>               
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -31,16 +31,25 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model.Data)
+                            @if (Model!=null && Model.Data != null && Model.Data.Count > 0)
+                            {
+                                foreach (var item in Model.Data)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.Subject)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Category)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.IssueStartedOn)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.CreatedOn)</td>
+                                        <td><a href="~/Ticket/UpdateTicket/@item.TicketId?customerId=@item.CustomerId">Update</a> | <a href="" onclick="Delete('@item.TicketId', '@item.CustomerId')">Delete</a></td>
+                                    </tr>
+                                }
+                            }
+                            else
                             {
                                 <tr>
-                                    <td>@Html.DisplayFor(modelItem => item.Subject)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.Category)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.IssueStartedOn)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.Status)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.CreatedOn)</td>
-                                    <td><a href="~/Ticket/UpdateTicket/@item.TicketId?customerId=@item.CustomerId">Update</a> | <a href="" onclick="Delete('@item.TicketId', '@item.CustomerId')">Delete</a></td>
+                                    <td colspan="7" align="center">No ticket available</td>
                                 </tr>
                             }
                     </table>
