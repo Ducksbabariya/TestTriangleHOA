@@ -5,7 +5,6 @@ D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\b
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\bin\Release\netcoreapp2.2\TestTriangleHOA.Web.pdb
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\bin\Release\netcoreapp2.2\TestTriangleHOA.Web.Views.dll
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\bin\Release\netcoreapp2.2\TestTriangleHOA.Web.Views.pdb
-D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.csprojAssemblyReference.cache
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.csproj.CoreCompileInputs.cache
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.RazorAssemblyInfo.cache
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.RazorAssemblyInfo.cs
@@ -35,3 +34,4 @@ D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\o
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.dll
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.pdb
 D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.csproj.CopyComplete
+D:\Study\Demo\Test-Triangle\Source\TestTriangle.HOA.MVCWebApp\TestTriangle.Web\obj\Release\netcoreapp2.2\TestTriangleHOA.Web.csprojAssemblyReference.cache

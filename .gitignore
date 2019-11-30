@@ -3,3 +3,11 @@
 ################################################################################
 
 /TestTriangle.HOA/TestTriangle.HOA.API/bin/Release/netcoreapp2.2
+/TestTriangle.HOA/TestTriangle.HOA.API/obj/Release/netcoreapp2.2
+/TestTriangle.HOA/TestTriangle.HOA.Common/bin/Release/netcoreapp2.2/TestTriangle.HOA.Common.deps.json
+/TestTriangle.HOA/TestTriangle.HOA.Data/obj/Release/netcoreapp2.2
+/TestTriangle.HOA/TestTriangle.HOA.Data/bin/Release/netcoreapp2.2
+/TestTriangle.HOA/TestTriangle.HOA.Data.Repository/obj/Release/netcoreapp2.2
+/TestTriangle.HOA/TestTriangle.HOA.Data.Repository/bin/Release/netcoreapp2.2
+/TestTriangle.HOA/TestTriangle.HOA.Common/bin/Release/netcoreapp2.2
+/TestTriangle.HOA/TestTriangle.HOA.Common/obj/Release/netcoreapp2.2
