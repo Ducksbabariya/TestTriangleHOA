@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TestTriangle.HOA/TestTriangle.HOA.API/bin/Release/netcoreapp2.2
